@@ -1,0 +1,27 @@
+[
+    {
+        "id": "2",
+        "category": "Computers",
+        "description": "A range of laptops, desktops, and PCs designed for gaming, work, and personal use."
+    },
+    {
+        "id": "3",
+        "category": "Phones",
+        "description": "Smartphones with various features, from budget to high-end models, for communication and entertainment."
+    },
+    {
+        "id": "4",
+        "category": "Smart Watches",
+        "description": "Wearable devices that offer health tracking, notifications, and fitness features."
+    },
+    {
+        "id": "5",
+        "category": "Chargers",
+        "description": "Charging devices, including wireless chargers and portable power sources, for all your gadgets."
+    },
+    {
+        "id": "6",
+        "category": "Power Banks",
+        "description": "Portable power banks to keep your devices charged on the go."
+    }
+]
