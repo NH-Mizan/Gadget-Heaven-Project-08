@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import { FaRegHeart } from "react-icons/fa";
-import { addProducts, addWishProducts,  } from '../localstore';
+import { addProducts, addWishProducts, getWishProducts,  } from '../localstore';
 import { Rating } from '@smastrom/react-rating'
 
 import '@smastrom/react-rating/style.css'
@@ -13,16 +13,23 @@ const ProductDetails = () => {
     const { productId } = useParams();
     const data = useLoaderData();
     const [product, setProducts] = useState({})
-    const [isAdd, ] = useState(false)
+    const [isAdd, setIsAdd] = useState(false)
+  
     useEffect(() => {
         const singleProducts = data.find(product => product.productId == productId)
+
+        const wish = getWishProducts()
+        const isExist = wish.find(item => item.productId == product.productId)
         setProducts(singleProducts)
+        if(isExist){
+            setIsAdd(true)
+           }
 
   
     }, [data, productId]);
 
 
-    const { brand, rating, Specification, description, price, product_title, image } = product;
+    const {  rating, Specification, description, price, product_title, image } = product;
 
     const handleAddProduct = (product) => {
         addProducts(product)
@@ -33,6 +40,10 @@ const ProductDetails = () => {
     const handleWishBtn=(product)=>{
 
         addWishProducts(product)
+        setIsAdd(true)
+
+      
+       
     }
 
 
@@ -97,7 +108,7 @@ const ProductDetails = () => {
 
                                         <div className='flex items-center'>
                                             <button onClick={() => handleAddProduct(product)} className="btn btn-primary mr-4">Add To Card</button>
-                                            <button onClick={()=>handleWishBtn(product)} className=" font-bold text-2xl bg-green-300 p-2 rounded-full">          <FaRegHeart /></button>
+                                            <button disabled={isAdd} onClick={()=>handleWishBtn(product)} className=" font-bold text-2xl bg-purple-300 p-2 rounded-full">          <FaRegHeart /></button>
                                         </div>
                                     </div>
                                 </div>

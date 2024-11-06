@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Banner = () => {
     return (
@@ -11,7 +12,7 @@ const Banner = () => {
                             <p className="py-6">
                                 Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!
                             </p>
-                            <button className="btn bg-purple-200 rounded-xl text-bold text-purple-600">Shop Now</button>
+                            <NavLink to={'/deshboard'}>                            <button className="btn bg-purple-200 rounded-xl text-bold text-purple-600">Shop Now</button></NavLink>
                         </div>
                     </div>
 

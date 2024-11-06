@@ -1,8 +1,8 @@
 import React from 'react';
 import { FaTrashAlt } from "react-icons/fa";
 
-const AddChildCard = ({item}) => {
-    const { brand, rating, Specification, description, price, product_title, image } = item;
+const AddChildCard = ({item, handleRemove}) => {
+    const {productId,  description, price, product_title, image } = item;
     return (
         <div>
             <div className=" bg-base-100 flex border-2 mb-6 items-center justify-between rounded-xl p-6  shadow-xl">
@@ -16,7 +16,7 @@ const AddChildCard = ({item}) => {
 
                </div>
              </div>
-               <button className='text-3xl text-red-500'><FaTrashAlt /></button>
+               <button onClick={()=>handleRemove(productId)} className='text-3xl text-red-500'><FaTrashAlt /></button>
             </div>
             
         </div>

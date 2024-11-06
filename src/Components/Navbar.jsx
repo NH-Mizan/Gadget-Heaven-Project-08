@@ -1,18 +1,18 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { FaRegHeart } from "react-icons/fa";
 import { MdOutlineLocalGroceryStore } from "react-icons/md";
 
 const Navbar = () => {
 
+    const {pathname} = useLocation()
 
-
-
+// className=`${pathname ==='/deshboard' ? " navbar bg-white text-black justify-between py-4 ":"navbar   bg-purple-600 flex justify-between rounded-t-xl text-white py-4"}`
 
 
     return (
-        <div>
-            <div className="navbar bg-purple-600 flex justify-between rounded-t-xl text-white py-4">
+        <div className='sticky top-0 z-40  '>
+            <div className='navbar  bg-purple-600 flex justify-between rounded-t-xl text-white py-4'>
                 <div className="flex">
                     <p className="btn btn-ghost text-xl font-bold">Gadget Heaven </p>
                 </div>
