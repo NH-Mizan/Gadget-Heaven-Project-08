@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getAllProducts, removeProduct } from '../localstore';
+import { getAllProducts, removeProduct, removeProducts } from '../localstore';
 import AddChildCard from './AddChildCard';
 import toast from "react-hot-toast";
 
@@ -9,6 +9,7 @@ import toast from "react-hot-toast";
 const Addcard = () => {
     const [cardProduct, setcardProduct] = useState([])
     const [price, setPrice] = useState(0)
+
     useEffect(() => {
         const product = getAllProducts();
         setcardProduct(product);
@@ -29,6 +30,11 @@ const Addcard = () => {
 
 
     }
+    const handlePurchseBtn=(id)=>{
+        removeProducts(id)
+        console.log(id)
+     
+    } 
 
     return (
         <div>
@@ -38,7 +44,7 @@ const Addcard = () => {
                     <div className='flex items-center '>
                         <h2 className="text-xl font-bold mr-24">Total cost : $ {price} </h2>
                         <button onClick={() => handleSortPrice("price")} className='btn mr-4 btn-outline btn-primary'>Sort by Price </button>
-                        <button className='btn  btn-primary'> Purchse </button>
+                        <button onClick={()=>handlePurchseBtn(cardProduct[0].productId)} className='btn  btn-primary'> Purchse </button>
                     </div>
                 </div>
 

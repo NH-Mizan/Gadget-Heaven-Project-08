@@ -47,7 +47,7 @@ const addWishProducts = product => {
 
     wish.push(product);
     localStorage.setItem('wishs', JSON.stringify(wish))
-    toast.success('Successfull added Wish card product!');
+    toast.success('Successfull added Wish card product!',);
 
 }
 
@@ -63,6 +63,15 @@ const removeProduct = id => {
 
     
 }
+const removeProducts = id => {
+    const favorite = getAllProducts()
+    const deleteing = favorite.filter(product => product.productId != id)
+
+    localStorage.setItem('products', JSON.stringify(deleteing))
+    toast.success('Successfull Remove  product!');
+
+    
+}
 
 
 
@@ -70,4 +79,5 @@ const removeProduct = id => {
 
 
 
-export { addProducts, getAllProducts, getWishProducts, addWishProducts,removeProduct }
+
+export { addProducts, getAllProducts, getWishProducts, addWishProducts,removeProduct, removeProducts }

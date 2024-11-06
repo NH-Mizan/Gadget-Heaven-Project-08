@@ -12,6 +12,7 @@ import ProductDetails from "./Components/ProductDetails";
 import ChildError from "./Components/ChildError";
 import Addcard from "./Components/Addcard";
 import Wishlist from "./Components/Wishlist";
+import Login from "./Components/Login";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -72,6 +73,10 @@ const router = createBrowserRouter([
           }
         ]
       },
+      {
+        path:'/login',
+        element:<Login></Login>
+      }
 
     ]
   },

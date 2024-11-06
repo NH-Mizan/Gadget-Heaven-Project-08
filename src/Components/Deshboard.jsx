@@ -9,7 +9,7 @@ const Deshboard = () => {
 
     return (
         <div>
-            <div className="hero  mt-4 bg-purple-600 py-8  rounded-b-xl">
+            <div className="hero  mt-4 bg-purple-600 py-8  rounded-xl">
                 <div className=" text-center">
                     <div className="max-w-4xl text-white">
                         <h1 className="text-5xl font-bold"> Dashboard  </h1>

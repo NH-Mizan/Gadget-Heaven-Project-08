@@ -12,7 +12,7 @@ const Navbar = () => {
 
     return (
         <div className='sticky top-0 z-40  '>
-            <div className={`navbar   flex justify-between rounded-t-xl  py-4 ${pathname==='/' || pathname.includes('/category')?" bg-purple-600 text-white":"bg-white text-black" }`}>
+            <div className={`navbar   flex justify-between rounded-t-xl  py-4 ${pathname==='/' || pathname.includes('/category')?" bg-purple-600 text-white":"bg-white-200 text-black" }`}>
             
                 <div className="flex">
                     <p className="btn btn-ghost text-xl font-bold">Gadget Heaven </p>
@@ -25,6 +25,7 @@ const Navbar = () => {
                             <li> <NavLink to='/products' className={({isActive})=>` font-bold ${isActive?'btn btn-secondary':''}`}>Statistics</NavLink>
                             </li>
                             <li><NavLink to='/deshboard' className={({isActive})=>`font-bold  ${isActive?'btn btn-secondary':''}`}>Deshboard</NavLink></li>
+                            <li><NavLink to='/login' className={({isActive})=>`font-bold  ${isActive?'btn btn-secondary':''}`}>LogIn</NavLink></li>
                         </ul>
                 
                 </div>
