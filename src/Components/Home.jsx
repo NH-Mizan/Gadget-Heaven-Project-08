@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Banner from './Banner';
 import { Outlet, useLoaderData } from 'react-router-dom';
 import Categoris from './Categoris';
@@ -6,10 +6,16 @@ import Categoris from './Categoris';
 
 const Home = () => {
     const categories = useLoaderData()
+
+    
+  useEffect(()=>{
+    document.title = "Home page | GadgetWave pages"
+  },[])
  
     
     return (
         <div>
+        
 
             <Banner></Banner>
 

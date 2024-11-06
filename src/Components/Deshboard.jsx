@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NavLink, Outlet,  } from 'react-router-dom';
 
 const Deshboard = () => {
+    useEffect(()=>{
+          document.title = "Deshboard | GadgetWave pages"
+    },[])
    
 
     return (
         <div>
-            <div className="hero   bg-purple-600 py-8  rounded-b-xl">
+            <div className="hero  mt-4 bg-purple-600 py-8  rounded-b-xl">
                 <div className=" text-center">
                     <div className="max-w-4xl text-white">
                         <h1 className="text-5xl font-bold"> Dashboard  </h1>
