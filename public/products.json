@@ -1,8 +1,8 @@
 [
     {
-        "product_id": "C001",
+        "productId": "C001",
         "product_title": "Gaming Laptop",
-        "product_image": "https://i.ibb.co.com/pdQ3KBX/download-1.jpg",
+        "image": "https://i.ibb.co.com/pdQ3KBX/download-1.jpg",
         "category": "Computers",
         "price": 1200.00,
         "description": "High-performance gaming laptop with a powerful GPU and processor.",
@@ -17,94 +17,9 @@
         "brand": "GameTech"
     },
     {
-        "product_id": "C002",
-        "product_title": "Ultrabook Laptop",
-        "product_image": "https://i.ibb.co.com/gdxk3xG/download-2.jpg",
-        "category": "Computers",
-        "price": 850.00,
-        "description": "Lightweight ultrabook with excellent battery life and a sleek design.",
-        "Specification": [
-            "Intel i5 Processor",
-            "8GB RAM",
-            "512GB SSD",
-            "14-inch display"
-        ],
-        "availability": true,
-        "rating": 4.5,
-        "color": "Silver"
-    },
-    {
-        "product_id": "C003",
-        "product_title": "Desktop PC",
-        "product_image": "https://i.ibb.co.com/JcYh3SR/download3.jpg",
-        "category": "Computers",
-        "price": 750.00,
-        "description": "Desktop computer ideal for home and office use.",
-        "Specification": [
-            "Intel i5 Processor",
-            "8GB RAM",
-            "1TB HDD",
-            "Integrated Graphics"
-        ],
-        "availability": true,
-        "rating": 4.3,
-        "form_factor": "Tower"
-    },
-    {
-        "product_id": "C004",
-        "product_title": "All-in-One PC",
-        "product_image": "https://i.ibb.co.com/6WqPn7t/download5.jpg",
-        "category": "Computers",
-        "price": 950.00,
-        "description": "All-in-one PC with a stunning display and powerful hardware.",
-        "Specification": [
-            "Intel i7 Processor",
-            "16GB RAM",
-            "512GB SSD",
-            "23.8-inch display"
-        ],
-        "availability": true,
-        "rating": 4.6,
-        "touchscreen": false
-    },
-    {
-        "product_id": "C005",
-        "product_title": "Convertible Laptop",
-        "product_image": "https://i.ibb.co.com/n1K2SG6/download45.jpg",
-        "category": "Computers",
-        "price": 650.00,
-        "description": "2-in-1 laptop that can be used as a tablet or laptop.",
-        "Specification": [
-            "AMD Ryzen 5 Processor",
-            "8GB RAM",
-            "256GB SSD",
-            "14-inch touchscreen"
-        ],
-        "availability": true,
-        "rating": 4.4,
-        "color": "Blue"
-    },
-    {
-        "product_id": "C006",
-        "product_title": "Mini PC",
-        "product_image": "https://i.ibb.co.com/kXfzxvw/images6.jpg",
-        "category": "Computers",
-        "price": 300.00,
-        "description": "Compact mini PC perfect for basic tasks and media streaming.",
-        "Specification": [
-            "Intel Celeron Processor",
-            "4GB RAM",
-            "64GB SSD",
-            "Dual HDMI"
-        ],
-        "availability": false,
-        "rating": 4.1,
-        "size": "Compact"
-    },
-    {
-        "product_id": "P001",
+        "productId": "P001",
         "product_title": "Smartphone X10",
-        "product_image": "https://i.ibb.co.com/rvMvTRc/download7.jpg",
+        "image": "https://i.ibb.co.com/rvMvTRc/download7.jpg",
         "category": "Phones",
         "price": 699.00,
         "description": "Feature-rich smartphone with a high-resolution camera.",
@@ -119,26 +34,43 @@
         "color": "Black"
     },
     {
-        "product_id": "P002",
-        "product_title": "Budget Smartphone A3",
-        "product_image": "https://i.ibb.co.com/dcMrH4n/download8.jpg",
-        "category": "Phones",
-        "price": 199.00,
-        "description": "Affordable smartphone with essential features.",
+        "productId": "C002",
+        "product_title": "Ultrabook Laptop",
+        "image": "https://i.ibb.co.com/gdxk3xG/download-2.jpg",
+        "category": "Computers",
+        "price": 850.00,
+        "description": "Lightweight ultrabook with excellent battery life and a sleek design.",
         "Specification": [
-            "32GB Storage",
-            "5.7-inch display",
-            "Dual rear camera",
-            "4G support"
+            "Intel i5 Processor",
+            "8GB RAM",
+            "512GB SSD",
+            "14-inch display"
         ],
         "availability": true,
-        "rating": 4.2,
-        "color": "Gray"
+        "rating": 4.5,
+        "color": "Silver"
     },
     {
-        "product_id": "S001",
+        "productId": "C005",
+        "product_title": "Convertible Laptop",
+        "image": "https://i.ibb.co.com/n1K2SG6/download45.jpg",
+        "category": "Computers",
+        "price": 650.00,
+        "description": "2-in-1 laptop that can be used as a tablet or laptop.",
+        "Specification": [
+            "AMD Ryzen 5 Processor",
+            "8GB RAM",
+            "256GB SSD",
+            "14-inch touchscreen"
+        ],
+        "availability": true,
+        "rating": 4.4,
+        "color": "Blue"
+    },
+    {
+        "productId": "S001",
         "product_title": "Smartwatch Pro",
-        "product_image": "https://i.ibb.co.com/LRSPGcn/download9.jpg",
+        "image": "https://i.ibb.co.com/LRSPGcn/download9.jpg",
         "category": "Smart Watches",
         "price": 299.00,
         "description": "Advanced smartwatch with health tracking and GPS.",
@@ -153,9 +85,97 @@
         "battery_life": "2 days"
     },
     {
-        "product_id": "S002",
+        "productId": "C003",
+        "product_title": "Desktop PC",
+        "image": "https://i.ibb.co.com/JcYh3SR/download3.jpg",
+        "category": "Computers",
+        "price": 750.00,
+        "description": "Desktop computer ideal for home and office use.",
+        "Specification": [
+            "Intel i5 Processor",
+            "8GB RAM",
+            "1TB HDD",
+            "Integrated Graphics"
+        ],
+        "availability": true,
+        "rating": 4.3,
+        "form_factor": "Tower"
+    },
+    {
+        "productId": "C004",
+        "product_title": "All-in-One PC",
+        "image": "https://i.ibb.co.com/6WqPn7t/download5.jpg",
+        "category": "Computers",
+        "price": 950.00,
+        "description": "All-in-one PC with a stunning display and powerful hardware.",
+        "Specification": [
+            "Intel i7 Processor",
+            "16GB RAM",
+            "512GB SSD",
+            "23.8-inch display"
+        ],
+        "availability": true,
+        "rating": 4.6,
+        "touchscreen": false
+    },
+    {
+        "productId": "CH002",
+        "product_title": "Samsung  charger 20000mAh",
+        "image": "https://i.ibb.co.com/r7Zv2bn/images.jpg",
+        "category": "Chargers",
+        "price": 45.00,
+        "description": "High-capacity portable charger for multiple device recharges.",
+        "Specification": [
+            "20000mAh capacity",
+            "Dual USB ports",
+            "LED battery indicator",
+            "Fast charging support"
+        ],
+        "availability": true,
+        "rating": 4.7,
+        "weight": "400g"
+    },
+  
+    {
+        "productId": "C006",
+        "product_title": "Mini PC",
+        "image": "https://i.ibb.co.com/kXfzxvw/images6.jpg",
+        "category": "Computers",
+        "price": 300.00,
+        "description": "Compact mini PC perfect for basic tasks and media streaming.",
+        "Specification": [
+            "Intel Celeron Processor",
+            "4GB RAM",
+            "64GB SSD",
+            "Dual HDMI"
+        ],
+        "availability": false,
+        "rating": 4.1,
+        "size": "Compact"
+    },
+
+    {
+        "productId": "P002",
+        "product_title": "Budget Smartphone A3",
+        "image": "https://i.ibb.co.com/dcMrH4n/download8.jpg",
+        "category": "Phones",
+        "price": 199.00,
+        "description": "Affordable smartphone with essential features.",
+        "Specification": [
+            "32GB Storage",
+            "5.7-inch display",
+            "Dual rear camera",
+            "4G support"
+        ],
+        "availability": true,
+        "rating": 4.2,
+        "color": "Gray"
+    },
+ 
+    {
+        "productId": "S002",
         "product_title": "Fitness Smartwatch Lite",
-        "product_image": "https://i.ibb.co.com/9YvYY09/download10.jpg",
+        "image": "https://i.ibb.co.com/9YvYY09/download10.jpg",
         "category": "Smart Watches",
         "price": 99.00,
         "description": "Lightweight smartwatch for fitness enthusiasts.",
@@ -170,9 +190,9 @@
         "color": "Pink"
     },
     {
-        "product_id": "CH001",
+        "productId": "CH001",
         "product_title": "Wireless Charger Pad",
-        "product_image": "https://i.ibb.co.com/brCkqfW/download.jpg",
+        "image": "https://i.ibb.co.com/brCkqfW/download.jpg",
         "category": "Chargers",
         "price": 29.99,
         "description": "Fast wireless charger compatible with all Qi-enabled devices.",
@@ -185,22 +205,6 @@
         "availability": true,
         "rating": 4.5,
         "color": "Black"
-    },
-    {
-        "product_id": "CH002",
-        "product_title": "Samsung  charger 20000mAh",
-        "product_image": "https://i.ibb.co.com/r7Zv2bn/images.jpg",
-        "category": "Chargers",
-        "price": 45.00,
-        "description": "High-capacity portable charger for multiple device recharges.",
-        "Specification": [
-            "20000mAh capacity",
-            "Dual USB ports",
-            "LED battery indicator",
-            "Fast charging support"
-        ],
-        "availability": true,
-        "rating": 4.7,
-        "weight": "400g"
     }
+
 ]

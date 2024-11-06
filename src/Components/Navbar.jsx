@@ -18,20 +18,20 @@ const Navbar = () => {
                 </div>
                 <div className=' justify-center flex items-center' >
           
-                        <ul className='flex font-bold gap-6'>
-                            <li> <NavLink to='/'>Home</NavLink>
+                        <ul className='flex items-center font-bold gap-6'>
+                            <li> <NavLink  to='/' className={({isActive})=>`  font-bold  ${isActive?'btn btn-secondary':''}`}>Home</NavLink>
                             </li>
-                            <li> <NavLink to=''>Statistics</NavLink>
+                            <li> <NavLink to='/products' className={({isActive})=>` font-bold ${isActive?'btn btn-secondary':''}`}>Statistics</NavLink>
                             </li>
-                            <li><NavLink to='/deshboard'>Deshboard</NavLink></li>
+                            <li><NavLink to='/deshboard' className={({isActive})=>`font-bold  ${isActive?'btn btn-secondary':''}`}>Deshboard</NavLink></li>
                         </ul>
                 
                 </div>
-                <div className="flex-none">
+                <div className="flex-none gap-4">
                     <div className="dropdown dropdown-end">
-                        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+                        <div tabIndex={0} role="button" className="btn  btn-circle">
                             <div className="indicator">
-                               <div className='text-2xl font-bold'>
+                               <div className='text-xl font-bold'>
                                <MdOutlineLocalGroceryStore />
 
                                </div>
@@ -50,9 +50,9 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className="dropdown dropdown-end">
-                        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+                        <div tabIndex={0} role="button" className="btn btn-circle">
                             <div className="indicator">
-                             <div className='text-2xl font-bold'>
+                             <div className='text-xl font-bold'>
                              <FaRegHeart/>
                              </div>
                                 <span className="badge badge-sm indicator-item">0</span>
