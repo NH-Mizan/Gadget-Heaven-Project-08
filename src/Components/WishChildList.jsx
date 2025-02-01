@@ -11,7 +11,9 @@ const WishChildList = ({item}) => {
            <p className='text-lg font-bold text-purple-400 my-4'>{description}</p>
 
            <p className='text-xl font-bold '>Price : $ {price}</p>
+           <button className='text-green-500 border-2 border-green-500 rounded-3xl px-2 mt-4'>Add to card </button>
 
+          
           </div>
         </div>
         

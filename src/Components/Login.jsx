@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import toast from "react-hot-toast";
 
 
@@ -7,6 +7,11 @@ const Login = () => {
     const formBtn =()=>{
         toast.success('Login  Successfull  product!');
     }
+   
+        useEffect(()=>{
+              document.title = "Login | Gadgethaven "
+        },[])
+    
     return (
         <div>
             <div className="hero bg-base-200 min-h-screen">

@@ -3,7 +3,7 @@ import { NavLink, Outlet,  } from 'react-router-dom';
 
 const Deshboard = () => {
     useEffect(()=>{
-          document.title = "Deshboard | GadgetWave pages"
+          document.title = "Deshboard |  Gadgethaven "
     },[])
    
 

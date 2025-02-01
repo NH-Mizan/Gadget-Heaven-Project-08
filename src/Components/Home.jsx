@@ -9,7 +9,7 @@ const Home = () => {
 
     
   useEffect(()=>{
-    document.title = "Home page | GadgetWave pages"
+    document.title = "Home page |  Gadgethaven "
   },[])
  
     

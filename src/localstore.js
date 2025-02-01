@@ -1,4 +1,4 @@
-import toast from "react-hot-toast";
+import { toast } from 'react-toastify';
 
 
 // grt product
@@ -64,11 +64,7 @@ const removeProduct = id => {
     
 }
 const removeProducts = id => {
-    const favorite = getAllProducts()
-    const deleteing = favorite.filter(product => product.productId != id)
-
-    localStorage.setItem('products', JSON.stringify(deleteing))
-    toast.success('Successfull Remove  product!');
+   localStorage.clear();
 
     
 }
